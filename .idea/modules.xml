@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01_Collections/01_Collections.iml" filepath="$PROJECT_DIR$/01_Collections/01_Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Full Java Scratch to Advance.iml" filepath="$PROJECT_DIR$/.idea/Full Java Scratch to Advance.iml" />
+    </modules>
+  </component>
+</project>
