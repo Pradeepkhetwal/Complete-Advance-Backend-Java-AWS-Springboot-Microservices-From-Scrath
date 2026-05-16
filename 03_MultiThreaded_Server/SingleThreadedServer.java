@@ -25,7 +25,7 @@ public class SingleThreadedServer {
                 Socket acceptedConnection = socket.accept();
                 System.out.println("Connection established " + acceptedConnection.getRemoteSocketAddress());
 //
-                PrintWriter toClient = new PrintWriter(acceptedConnection.getOutputStream());
+                PrintWriter toClient = new PrintWriter(acceptedConnection.getOutputStream(),true);
 
 //                acceptedConnection.getInputstream() means “Give me the stream of data coming FROM the client.”
                 /*
@@ -38,6 +38,8 @@ public class SingleThreadedServer {
 //                We can fetch the data from the fromclient using .readLine() method (this data is coming from client).
                 BufferedReader fromClient =
                         new BufferedReader(new InputStreamReader(acceptedConnection.getInputStream()));
+
+                System.out.println(fromClient.readLine());
 
 //                Sending the below text from server to client.
                 toClient.println("Hello from the server");
