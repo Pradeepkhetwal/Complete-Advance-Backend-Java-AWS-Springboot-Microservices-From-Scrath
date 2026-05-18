@@ -1,0 +1,17 @@
+In this lecture we are going to understand how beans are acutally created how we can create them manually without using
+any annotations , we learnt how we use applicationContext.xml file to create beans of mulitple classes and inject them.
+
+Here we have created on template userConfig whose bean we are going to use across the 2 services that we have created so
+ we are just learning how to create beans using applicationContext.xml file and request those beans manually by it's
+ method (the code for this part is inside the main function ).
+
+There are 3 main concepts
+
+1.IOC-: Also known as inversion of control , it is a principal followed by spring , where spring handles the beans and
+manages them by its own.
+
+2.ApplicationContext-: It is the acutal practical implementation of the IOC means , it is a container that stores all
+the beans , their dependencies, their lifecycle.
+
+3. DI-: Also known as dependency injection in this usually beans are injected into the class which requires that object,
+ without creating the object using new keyword.

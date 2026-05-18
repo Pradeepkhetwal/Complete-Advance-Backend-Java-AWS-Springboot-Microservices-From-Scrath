@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    Below means we have created one bean whose id is userConfigBean You can name it any, and the bean we are
+creating of is of the class whose path is mentioned inside class = "" and once bean is created then we are
+initilaizing the values of the Userconfig class using it's bean.-->
+<bean id = "userConfigBean" class = "org.example.bean.UserConfig">
+    <property name="name" value = "Pradeep Khetwal"/>
+    <property name="className" value = "ExampleClass"/>
+</bean>
+    <bean id ="userservice" class="org.example.service.UserService">
+        <constructor-arg ref="userConfigBean"/>
+    </bean>
+    <bean id = "OrderService" class="org.example.service.OrderService" factory-method="createInstance">
+        <constructor-arg ref = "userservice"/>
+        <constructor-arg ref = "userConfigBean"/>
+
+    </bean>
+</beans>
