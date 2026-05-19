@@ -1,0 +1,25 @@
+Proxy matlab ek aise cheez jo kisi ko intercept kar pa rahi hai.
+
+Let say we have an user service that use one order service method and we want to log each and every activity of user
+like when he placed an order, what order he placed , so what we can do is we can create a proxy which can intercept each
+ of the activity performed by the user, so whenever user is ordering or doing something the proxy will intercept it
+ (think like middleware in nodejs) and after that only call is forwarded to other required service.
+
+
+ Proxy can be used to add log, cache result , etc.
+
+ In technical terms proxy is a object that stands in front of another object and control access to it.
+
+ Means instead of service.doWork() we call proxy.doWork();
+
+Types of proxy
+
+1.Static Proxy-: A static proxy is a proxy class that is written manually by the developer.
+
+2. Dynamic Proxy -: These proxy are created at runtime by Java and it's framework . We do not write proxy class manually
+ here.
+These are of 2 types.
+
+A. JDK Dynamic Proxy -:It only works when a class implements a interface.
+
+B. CGLIB Proxy -: Used when class does not implement interface.
