@@ -1,6 +1,6 @@
 package org.example.Classes;
 
-public class Man extends Person{
+public class Man implements Person{
     private String name;
     private int age;
     private String city;

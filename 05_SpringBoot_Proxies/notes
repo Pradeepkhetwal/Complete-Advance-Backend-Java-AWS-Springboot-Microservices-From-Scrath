@@ -19,7 +19,5 @@ Types of proxy
 2. Dynamic Proxy -: These proxy are created at runtime by Java and it's framework . We do not write proxy class manually
  here.
 These are of 2 types.
-
 A. JDK Dynamic Proxy -:It only works when a class implements a interface.
-
 B. CGLIB Proxy -: Used when class does not implement interface.
