@@ -1,0 +1,18 @@
+AOP means Aspect Oriented Programming.
+
+AOP is just like proxy , it can also intercept just like proxy , but it has a lot more abilities than proxy.
+
+So whenever we need to use wrapper class over any class then we use AOP means let say we need to call a method M , what
+we can do is we can use wrapper such that we want to execute a specific method before this method M and a specific
+method after this method so we can do this using wrapper through AOP.
+
+We are using gradle project again to learn from this tutorial
+
+
+In this lecture we have learnt many things mentioned below.
+
+1. Lombok-: It is a java library that is used to generate boilerplate code during compilation so instead of writing
+complete getters , setters, etc. We can directly use annotations like @Getter, @Setter , @NoArgConstructor, @Data(this
+one is shortcut for all i.e for getters , setters, etc) so to just include this one we include all.
+
+
